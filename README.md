@@ -1,4 +1,4 @@
-# ABM-Basics-OOP (Coming Soon!)
+# ABM-Basics-OOP
 Agent-Based Modelling Chapter Three: C++ OOP Patterns with OpenGL and SDL
 
 ### Topic: Object-Oriented C++ integration with SDL and OpenGL for Agent-Based Modelling (ABM)
