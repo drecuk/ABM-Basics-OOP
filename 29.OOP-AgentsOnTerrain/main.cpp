@@ -268,39 +268,34 @@ int main(int argc, char**argv)
 
     cout<<"------- Cleaning Up Memory"<<endl;
 
-    cout<<"---- deleting agents"<<endl;
-    for(int i = 0; i < agentNo; i++)
-      delete agents[i]; // calls each ~Agent()
-
-    delete[] agents; // delete the heap memory
-
-
     cout<<"---- deleting predators"<<endl;
-    for(int i = 0; i < 2; i++)
-      predators[i]->~Predator();
-
+    // for(int i = 0; i < 2; i++)
+    //   predators[i]->~Predator();
     delete[] predators;
 
     cout<<"---- deleting preys"<<endl;
-    for(int i = 0; i < 4; i++)
-      preys[i]->~Prey();
-
+    // for(int i = 0; i < 4; i++)
+    //   preys[i]->~Prey();
     delete[] preys;
 
     cout<<"---- deleting snacks"<<endl;
-    for(int i = 0; i < 6; i++)
-      snacks[i]->~Snack();
-
+    // for(int i = 0; i < 6; i++)
+    //   snacks[i]->~Snack();
     delete[] snacks;
 
-    cout<<"---- deleting terrain"<<endl;
-    delete terrain;
+    cout<<"---- deleting agents"<<endl;
+    // for(int i = 0; i < agentNo; i++)
+    //   delete agents[i]; // calls each ~Agent()
+    delete[] agents; // delete the heap memory
 
     cout<<"---- deleting grid"<<endl;
     delete grid;
 
     cout<<"---- deleting camera"<<endl;
     delete camera;
+
+    cout<<"---- deleting terrain"<<endl;
+    delete terrain;
 
     // Destroy window
     SDL_DestroyWindow(displayWindow);

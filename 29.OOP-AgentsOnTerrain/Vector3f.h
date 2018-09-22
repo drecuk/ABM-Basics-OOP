@@ -134,7 +134,7 @@ public:
 		// essentially a cross product between two vectors
 		float v = v1.x * v2.z - v1.z * v2.x;
 
-		cout<<v<<"="<<v1.x<<"*"<<v2.z<<" - "<<v1.z<<"*"<<v2.x<<endl;
+		//cout<<v<<"="<<v1.x<<"*"<<v2.z<<" - "<<v1.z<<"*"<<v2.x<<endl;
 
 		return v;
 	}

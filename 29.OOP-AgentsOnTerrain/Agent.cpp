@@ -64,6 +64,7 @@ Agent::~Agent()
 {
 	_grid = NULL;
 	_agents = NULL;
+	_terrain = NULL;
   cout<<"Agent destroyed!"<<endl;
 }
 
